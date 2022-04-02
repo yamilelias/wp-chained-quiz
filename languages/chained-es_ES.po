@@ -1,0 +1,1366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chained Quiz\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 04:43+0000\n"
+"PO-Revision-Date: 2022-04-02 17:32+0000\n"
+"Last-Translator: YAMIL ADRIAN ELIAS SOTO\n"
+"Language-Team: Español\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.2\n"
+"X-Domain: chained"
+
+#: views/chained-quizzes.html.php:20
+#, php-format
+msgid "%d users"
+msgstr "%d usuarios"
+
+#: models/quiz.php:308
+#, php-format
+msgid "%s (Copy)"
+msgstr "%s (Copiar)"
+
+#: controllers/completed.php:209
+#, php-format
+msgid "(%d points)"
+msgstr "(%d puntos)"
+
+#: views/choice.html.php:8
+msgid "(same question)"
+msgstr "(la misma pregunta)"
+
+#: views/quiz.html.php:26
+msgid ""
+"- A table with the questions, answers given by the user, correct / wrong "
+"info and points collected."
+msgstr ""
+"- Una tabla con las preguntas, respuestas dadas por el usuario, información "
+"correcta/incorrecta y puntos acumulados."
+
+#: views/integrations-arigato.html.php:21 
+#: views/integrations-arigato.html.php:51 
+#: views/integrations-arigatopro.html.php:21 
+#: views/integrations-arigatopro.html.php:58 
+#: views/integrations-mailchimp.html.php:41 
+#: views/integrations-mailchimp.html.php:81 views/completed.html.php:53 
+#: views/integrations-tabs.html.php:28
+msgid "- Any result -"
+msgstr "- Cualquier resultado -"
+
+#: views/quiz.html.php:22
+msgid "- Points collected"
+msgstr "- Puntos acumulados"
+
+#: views/choice.html.php:5
+msgid "- Select question -"
+msgstr "- Seleccionar pregunta -"
+
+#: views/quiz.html.php:24
+msgid ""
+"- The number of correctly answered questions. Multiple choice questions will "
+"be considered correctly answered when the amount of points collected on them "
+"is positive."
+msgstr ""
+"- El número de preguntas respondidas correctamente. Las preguntas de opción "
+"múltiple se considerarán correctamente respondidas cuando la cantidad de "
+"puntos acumulados en las mismas sea positiva."
+
+#: views/quiz.html.php:23
+msgid "- The number of total questions answered"
+msgstr "- El número de preguntas totales respondidas"
+
+#: views/quiz.html.php:25
+msgid "- The percentage of correctly answered questions from all questions."
+msgstr ""
+"- El porcentaje de preguntas respondidas correctamente de todas las "
+"preguntas."
+
+#: views/quiz.html.php:21
+msgid "- The result (grade) text/description"
+msgstr "- El texto/descripción del resultado (grado)"
+
+#: views/quiz.html.php:20
+msgid "- The result (grade) title"
+msgstr "- El título del resultado (grado)"
+
+#: views/sidebar.html.php:6
+msgid ""
+"<b>WatuPRO</b> is general purpose quiz, survey and exam plugin with rich "
+"reporting features and free integration with many popular plugins and "
+"services."
+msgstr ""
+"<b>WatuPRO</b> es un complemento de cuestionarios, encuestas y exámenes de "
+"propósito general con funciones de informes enriquecidas e integración "
+"gratuita con muchos complementos y servicios populares."
+
+#: views/question.html.php:22
+msgid "Accept comments along with the answer."
+msgstr "Aceptar comentarios junto con la respuesta."
+
+#: views/question.html.php:27
+msgid "Add more rows"
+msgstr "Añadir más filas"
+
+#: views/integrations-arigato.html.php:8 
+#: views/integrations-arigatopro.html.php:8 
+#: views/integrations-mailchimp.html.php:28
+msgid "Add New Subscription Rule"
+msgstr "Agregar nueva regla de suscripción"
+
+#: views/options.html.php:47
+msgid "Add quotes around text fields (recommended)"
+msgstr "Agregar comillas alrededor de los campos de texto (recomendado)"
+
+#: views/results.html.php:18
+msgid "Add Result"
+msgstr "Añadir resultado"
+
+#: views/integrations-arigato.html.php:28 
+#: views/integrations-arigatopro.html.php:35 
+#: views/integrations-mailchimp.html.php:58
+msgid "Add Rule"
+msgstr "Agregar regla"
+
+#: views/quiz.html.php:2
+msgid "Add/Edit Chained Quiz"
+msgstr "Agregar/Editar Cuestionario Encadenado"
+
+#: views/question.html.php:2
+#, php-format
+msgid "Add/Edit Question in \"%s\""
+msgstr "Agregar/Editar Pregunta en \"%s\""
+
+#: views/integrations-mailchimp.html.php:55 
+#: views/integrations-mailchimp.html.php:96
+msgid "and add these tags (optional)"
+msgstr "y agrega estas etiquetas (opcional)"
+
+#: views/completed.html.php:84 models/quiz.php:280
+msgid "Answer"
+msgstr "Respuesta"
+
+#: views/completed.html.php:48
+msgid "Are less than"
+msgstr "Son menos que"
+
+#: views/completed.html.php:49
+msgid "Are more than"
+msgstr "Son más que"
+
+#: views/chained-quizzes.html.php:42 views/results.html.php:57 
+#: views/completed.html.php:128 views/integrations-tabs.html.php:11 
+#: views/questions.html.php:48
+msgid "Are you sure?"
+msgstr "¿Está seguro?"
+
+#: views/integrations-tabs.html.php:3
+msgid "Arigato"
+msgstr "arigato"
+
+#: views/integrations.html.php:8
+msgid "Arigato Autoresponder and Newsletter."
+msgstr "Arigato Autoresponder y Newsletter."
+
+#: views/integrations-tabs.html.php:4
+msgid "Arigato PRO"
+msgstr "Arigato PRO"
+
+#: views/integrations.html.php:9
+msgid "Arigato PRO Drip Marketing Suite"
+msgstr "Paquete de marketing por goteo Arigato PRO"
+
+#: views/question.html.php:20
+msgid "Automatically continue to the next question when a choice is selected"
+msgstr ""
+"Continuar automáticamente a la siguiente pregunta cuando se selecciona una "
+"opción"
+
+#: views/options.html.php:33
+msgid ""
+"Automatically hide the \"Go ahead\" button when possible (typically on "
+"\"single answer\" questions)."
+msgstr ""
+"Oculte automáticamente el botón \"Continuar\" cuando sea posible "
+"(normalmente en preguntas de \"respuesta única\")."
+
+#: views/quiz.html.php:58
+msgid ""
+"Automatically publish this quiz in new post once I hit the \"Save\" button. "
+"(The new post will be auto-generated with the quiz title used for post title."
+")"
+msgstr ""
+"Publicar automáticamente este cuestionario en una nueva publicación una vez "
+"que presione el botón \"Guardar\". (La nueva publicación se generará "
+"automáticamente con el título del cuestionario utilizado para el título de "
+"la publicación)."
+
+#: views/question.html.php:6
+msgid "Back to questions"
+msgstr "Volver a las preguntas"
+
+#: views/results.html.php:6 views/question.html.php:6 
+#: views/completed.html.php:5 views/sharing-options.html.php:4 
+#: views/quiz.html.php:6 views/questions.html.php:6
+msgid "Back to quizzes"
+msgstr "Volver a cuestionarios"
+
+#: views/options.html.php:12
+msgid ""
+"By default only Administrator and Super admin can manage the quizzes. You "
+"can enable other roles here."
+msgstr ""
+"De manera predeterminada, solo el administrador y el superadministrador "
+"pueden administrar los cuestionarios. Puede habilitar otros roles aquí."
+
+#: views/quiz.html.php:51
+msgid ""
+"By default this content is used for both the email sent to user, and the "
+"email sent to admin. You can however use the {{{split}}} tag to make the "
+"email contents different. The content before the {{{split}}} tag will be "
+"sent to the user and the content after the {{{split}}} tag - to the admin."
+msgstr ""
+"De forma predeterminada, este contenido se utiliza tanto para el correo "
+"electrónico enviado al usuario como para el correo electrónico enviado al "
+"administrador. Sin embargo, puede usar la etiqueta {{{split}}} para hacer "
+"que el contenido del correo electrónico sea diferente. El contenido antes de "
+"la etiqueta {{{split}}} se enviará al usuario y el contenido después de la "
+"etiqueta {{{split}}}, al administrador."
+
+#. Name of the plugin
+#: models/basic.php:176
+msgid "Chained Quiz"
+msgstr "Chained Quiz"
+
+#: models/basic.php:189
+msgid "Chained Quiz Questions"
+msgstr "Preguntas de Chained Quiz"
+
+#: models/basic.php:187
+msgid "Chained Quiz Results"
+msgstr "Resultados de Chained Quiz"
+
+#: views/sharing-options.html.php:2
+msgid "Chained Quiz Social Sharing"
+msgstr "Compartir en redes Chained Quiz"
+
+#: views/chained-quizzes.html.php:2
+msgid "Chained Quizzes"
+msgstr "Chained Quizzes"
+
+#: views/question.html.php:16
+msgid "Checkboxes (multiple possible answers)"
+msgstr "Casillas de verificación (múltiples respuestas posibles)"
+
+#: views/question.html.php:25
+msgid "Choices/Answers for this question"
+msgstr "Opciones/Respuestas para esta pregunta"
+
+#: views/completed.html.php:107
+msgid "Cleanup all data"
+msgstr "Limpiar todos los datos"
+
+#: views/completed.html.php:60
+msgid "Clear Filters"
+msgstr "Borrar filtros"
+
+#: views/questions.html.php:11
+msgid "Click here to add a new question"
+msgstr "Haga clic aquí para agregar una nueva pregunta"
+
+#: views/options.html.php:43
+msgid "Comma"
+msgstr "Coma"
+
+#: controllers/quizzes.php:33
+msgid ""
+"Congratulations, you completed the <span>quiz!</span>\n"
+"<h2>{{result-title}}</h2>\n"
+"{{result-text}}\n"
+"\n"
+"You achieved {{points}} points from {{questions}} questions."
+msgstr ""
+"¡Felicidades, completaste el <span>quiz!</span>\n"
+"<h2>{{result-title}}</h2>\n"
+"{{result-text}}\n"
+"\n"
+"Obtuvo {{points}} puntos de {{questions}} preguntas."
+
+#: views/completed.html.php:27 views/completed.html.php:33 
+#: views/completed.html.php:39
+msgid "Contains"
+msgstr "Contiene"
+
+#: views/chained-quizzes.html.php:24
+msgid "Copy"
+msgstr "Copiar"
+
+#: views/choice.html.php:1
+msgid "Correct answer"
+msgstr "Respuesta correcta"
+
+#: models/quiz.php:280
+msgid "Correct answer?"
+msgstr "¿Respuesta correcta?"
+
+#. Description of the plugin
+msgid ""
+"Create a chained quiz where the upcoming questions can depend on the "
+"previous answer"
+msgstr ""
+"Cree un cuestionario donde las próximas preguntas puedan depender de la "
+"respuesta anterior"
+
+#: views/chained-quizzes.html.php:6
+msgid "Create new chained quiz"
+msgstr "Crear nuevo cuestionario"
+
+#: views/options.html.php:40
+msgid "CSV Exports"
+msgstr "Exportaciones CSV"
+
+#: controllers/completed.php:194
+msgid "Date / time"
+msgstr "Fecha / hora"
+
+#: views/completed.html.php:41
+msgid "Date Taken"
+msgstr "Fecha que se tendrá"
+
+#: views/completed.html.php:66
+msgid "Date/time"
+msgstr "Fecha/hora"
+
+#: models/result.php:19 models/result.php:39 models/result.php:50 
+#: models/quiz.php:28 models/quiz.php:64 models/question.php:26 
+#: models/question.php:46 models/question.php:61
+msgid "DB Error"
+msgstr "Error de base de datos"
+
+#: views/chained-quizzes.html.php:25 views/completed.html.php:68 
+#: views/completed.html.php:79 views/questions.html.php:29
+msgid "Delete"
+msgstr "Borrar"
+
+#: views/results.html.php:32
+msgid "Delete Result"
+msgstr "Eliminar resultado"
+
+#: views/integrations-arigato.html.php:60 
+#: views/integrations-arigatopro.html.php:74 
+#: views/integrations-mailchimp.html.php:100
+msgid "Delete Rule"
+msgstr "Eliminar regla"
+
+#: views/choice.html.php:13
+msgid "Delete this choice"
+msgstr "Eliminar esta opción"
+
+#: views/questions.html.php:35
+msgid "Did you know?"
+msgstr "¿Sabías?"
+
+#: views/options.html.php:35
+msgid "Do not auto-scroll when going to the next question."
+msgstr "No se desplace automáticamente al pasar a la siguiente pregunta."
+
+#: views/integrations-mailchimp.html.php:8
+msgid ""
+"Do not require email confirmation (Abusing this may cause your MailChimp "
+"account to be suspended.)"
+msgstr ""
+"No requiere confirmación por correo electrónico (el abuso de esto puede "
+"provocar que se suspenda su cuenta de MailChimp)."
+
+#: views/chained-quizzes.html.php:23 views/questions.html.php:29
+msgid "Edit"
+msgstr "Editar"
+
+#: views/questions.html.php:16
+msgid "Edit / Delete"
+msgstr "Editar / Borrar"
+
+#: views/results.html.php:8 views/question.html.php:8 
+#: views/completed.html.php:7 views/questions.html.php:8
+msgid "Edit This Quiz"
+msgstr "Editar este cuestionario"
+
+#: views/chained-quizzes.html.php:11
+msgid "Edit/Delete"
+msgstr "Editar/Borrar"
+
+#: views/completed.html.php:29
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: controllers/completed.php:194
+msgid "Email address"
+msgstr "Dirección de correo electrónico"
+
+#: views/options.html.php:21
+msgid "Email options"
+msgstr "Opciones de correo electrónico"
+
+#: views/options.html.php:54
+msgid ""
+"Enable debug mode to see SQL errors. (Useful in case you have any problems)"
+msgstr ""
+"Habilite el modo de depuración para ver los errores de SQL (Útil en caso de "
+"que tengas algún problema)."
+
+#: views/completed.html.php:26 views/completed.html.php:32 
+#: views/completed.html.php:38
+msgid "Ends with"
+msgstr "Termina con"
+
+#: views/completed.html.php:47
+msgid "Equal"
+msgstr "Igual"
+
+#: views/completed.html.php:24 views/completed.html.php:30 
+#: views/completed.html.php:36 views/completed.html.php:42
+msgid "Equals"
+msgstr "igual a"
+
+#: views/completed.html.php:14
+msgid "Export CSV"
+msgstr "Exportar CSV"
+
+#: views/completed.html.php:16
+#, php-format
+msgid ""
+"Export files are currently delimited by \"%s\". You can change the delimiter "
+"at <a href=\"%s\">Chained Quiz Settings</a> page."
+msgstr ""
+"Los archivos de exportación están actualmente delimitados por \"%s\". Puede "
+"cambiar el delimitador en la página <a href=\"%s\">Configuración de "
+"cuestionarios encadenados</a> ."
+
+#: views/completed.html.php:15
+msgid "Export with details"
+msgstr "Exportar con detalles"
+
+#: views/sharing-options.html.php:10
+msgid "Facebook and LinkedIn Sharing"
+msgstr "Compartir en Facebook y LinkedIn"
+
+#: views/options.html.php:42
+msgid "Field separator:"
+msgstr "Separador de campo:"
+
+#: views/completed.html.php:13
+msgid "Filter/search these records"
+msgstr "Filtrar/buscar estos registros"
+
+#: views/quiz.html.php:15
+msgid "Final Output"
+msgstr "Resultado Fianl"
+
+#: views/choice.html.php:3
+msgid "Finalize quiz"
+msgstr "Finalizar prueba"
+
+#: views/question.html.php:12
+msgid "for management purposes"
+msgstr "con fines de gestión"
+
+#: views/options.html.php:2
+msgid "General Options"
+msgstr "Opciones generales"
+
+#: views/integrations-tabs.html.php:2
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: views/sharing-options.html.php:12
+msgid "Get one here"
+msgstr "Consigue uno aquí"
+
+#: views/options.html.php:37
+msgid "Go Ahead"
+msgstr "Avanzar"
+
+#: views/display-quiz.html.php:49
+msgid "Go ahead"
+msgstr "Avanzar"
+
+#: controllers/integrations.php:236 models/quiz.php:98
+msgid "Guest"
+msgstr "Huésped"
+
+#: views/sharing-options.html.php:34
+msgid "Hashtag #"
+msgstr "Hashtag #"
+
+#: views/integrations.html.php:6
+msgid ""
+"Here you can define integration with various newsletter and email marketing "
+"plugins and services. This means that a quiz is completed the email of the "
+"respondend can be subscribed to selected mailing lists. Currently supported:"
+msgstr ""
+"Aquí puede definir la integración con varios complementos y servicios de "
+"newsletter y marketing por correo electrónico. Esto significa que una prueba "
+"se completa y el correo electrónico del encuestado se puede suscribir a las "
+"listas de correo seleccionadas. Actualmente soportado:"
+
+#: views/integrations-mailchimp.html.php:26
+msgid ""
+"Here you can define which quizzes will automatically subscribe the "
+"respondents into selected audiences. Note that only quizzes which collect "
+"user email address are shown."
+msgstr ""
+"Aquí puede definir qué cuestionarios suscribirán automáticamente a los "
+"encuestados en audiencias seleccionadas. Tenga en cuenta que solo se "
+"muestran las pruebas que recopilan la dirección de correo electrónico del "
+"usuario."
+
+#: views/integrations-arigatopro.html.php:6
+msgid ""
+"Here you can define which quizzes will automatically subscribe the "
+"respondents into selected mailing lists. Note that only quizzes which "
+"collect user email address are shown."
+msgstr ""
+"Aquí puede definir qué cuestionarios suscribirán automáticamente a los "
+"encuestados en las listas de correo seleccionadas. Tenga en cuenta que solo "
+"se muestran las pruebas que recopilan la dirección de correo electrónico del "
+"usuario."
+
+#: views/integrations-arigato.html.php:6
+msgid ""
+"Here you can define which quizzes will automatically subscribe the "
+"respondents into your mailing list. Note that only quizzes which collect "
+"user email address are shown."
+msgstr ""
+"Aquí puede definir qué cuestionarios suscribirán automáticamente a los "
+"encuestados en su lista de correo. Tenga en cuenta que solo se muestran las "
+"pruebas que recopilan la dirección de correo electrónico del usuario."
+
+#. Author URI of the plugin
+msgid "http://calendarscripts.info/"
+msgstr "http://calendarscripts.info/"
+
+#. URI of the plugin
+msgid "http://calendarscripts.info/chained-quiz.html"
+msgstr "http://calendarscripts.info/chained-quiz.html"
+
+#: views/questions.html.php:15
+msgid "ID"
+msgstr "ID"
+
+#: views/results.html.php:17 views/results.html.php:30
+msgid ""
+"If you enter this, the quiz will redirect to the URL instead of showing the "
+"\"Final Output\"."
+msgstr ""
+"Si ingresa esto, el cuestionario se redirigirá a la URL en lugar de mostrar "
+"el \"Resultado final\"."
+
+#: views/sharing-options.html.php:27
+msgid ""
+"If you leave \"Tweet text\" empty the tweet text will be extracted from the "
+"result description. If it is empty, the result title will be used."
+msgstr ""
+"Si deja \"Tweetear Texto\" vacío, el texto del tweet se extraerá de la "
+"descripción del resultado. Si está vacío, se utilizará el título del "
+"resultado."
+
+#: views/sharing-options.html.php:13
+msgid "If you leave it empty, no Facebook share button will be generated."
+msgstr ""
+"Si lo deja vacío, no se generará ningún botón para compartir en Facebook."
+
+#: views/sharing-options.html.php:21
+msgid ""
+"If you leave title and text empty, result title and result description will "
+"be used respectively."
+msgstr ""
+"Si deja el título y el texto vacíos, se utilizarán respectivamente el título "
+"y la descripción del resultado."
+
+#: views/sharing-options.html.php:23
+msgid ""
+"IMPORTANT: Facebook needs to be able to access your site to retrieve the "
+"social sharing data. If the site is on localhost or behind a htaccess login "
+"box sharing will not work properly."
+msgstr ""
+"IMPORTANTE: Facebook necesita poder acceder a su sitio para recuperar los "
+"datos para compartir en redes sociales. Si el sitio está en localhost o "
+"detrás de un cuadro de inicio de sesión de htaccess, compartir no funcionará "
+"correctamente."
+
+#: views/integrations.html.php:17
+msgid "Integrate with Arigato"
+msgstr "Integrar con Arigato"
+
+#: views/integrations-arigato.html.php:2
+msgid "Integrate with Arigato Lite"
+msgstr "Integrar con Arigato Lite"
+
+#: views/integrations.html.php:21 views/integrations-arigatopro.html.php:2
+msgid "Integrate with Arigato PRO"
+msgstr "Integrar con Arigato PRO"
+
+#: views/integrations.html.php:24 views/integrations-mailchimp.html.php:2
+msgid "Integrate with MailChimp"
+msgstr "Integrar con MailChimp"
+
+#: models/basic.php:184
+msgid "Integrations"
+msgstr "integraciones"
+
+#: views/integrations.html.php:2
+msgid "Integrations with newsletter services"
+msgstr "Integraciones con servicios de newsletter"
+
+#: views/completed.html.php:35
+msgid "IP Address"
+msgstr "Dirección IP"
+
+#: views/completed.html.php:44
+msgid "Is after"
+msgstr "Es despues"
+
+#: views/completed.html.php:43
+msgid "Is before"
+msgstr "Es antes"
+
+#: views/sidebar.html.php:8
+msgid "Just go ahead and"
+msgstr "Solo sigue adelante y"
+
+#. Author of the plugin
+msgid "Kiboko Labs"
+msgstr "Kibobo Labs"
+
+#: views/question.html.php:23
+msgid "Label before the comments field:"
+msgstr "Etiqueta antes del campo de comentarios:"
+
+#: views/quiz.html.php:33
+#, php-format
+msgid "Limit quiz attempts to %s. (Enter 0 for unlimited attempts.)"
+msgstr ""
+"Limite los intentos de cuestionario a %s. (Ingrese 0 para intentos "
+"ilimitados)."
+
+#: views/display-quiz.html.php:4
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: views/integrations.html.php:10
+msgid "MailCHimp"
+msgstr "MailCHimp"
+
+#: views/integrations-tabs.html.php:5
+msgid "MailChimp"
+msgstr "MailChimp"
+
+#: views/chained-quizzes.html.php:17 views/chained-quizzes.html.php:18
+msgid "Manage"
+msgstr "Administrar"
+
+#: views/integrations-arigato.html.php:34 
+#: views/integrations-arigatopro.html.php:41 
+#: views/integrations-mailchimp.html.php:64
+msgid "Manage Existing Rules"
+msgstr "Administrar reglas existentes"
+
+#: views/results.html.php:7 views/quiz.html.php:8
+msgid "Manage Questions"
+msgstr "Administrar preguntas"
+
+#: views/completed.html.php:5
+msgid "Manage questions"
+msgstr "Administrar preguntas"
+
+#: views/questions.html.php:2
+#, php-format
+msgid "Manage Questions in %s"
+msgstr "Administrar preguntas en %s"
+
+#: views/results.html.php:2
+msgid "Manage Quiz Results/Outcomes"
+msgstr "Administrar resultados de cuestionarios/resultados"
+
+#: views/question.html.php:7 views/completed.html.php:6 
+#: views/questions.html.php:7
+msgid "Manage Results"
+msgstr "Administrar resultados"
+
+#: views/quiz.html.php:9
+msgid "Manage Results / Outcomes"
+msgstr "Gestionar resultados/puntajes"
+
+#: views/options.html.php:52
+msgid "Mask IP addresses for GDPR compliance."
+msgstr "Enmascare las direcciones IP para el cumplimiento de GDPR."
+
+#: views/results.html.php:15 views/results.html.php:28
+msgid "Max. points:"
+msgstr "Máx. puntos:"
+
+#: views/results.html.php:14 views/results.html.php:27
+msgid "Min. points:"
+msgstr "Mín. puntos:"
+
+#: views/questions.html.php:26
+msgid "Move Down"
+msgstr "Mover hacia abajo"
+
+#: views/questions.html.php:23
+msgid "Move Up"
+msgstr "Ascender"
+
+#: views/sidebar.html.php:15
+msgid "Need Support?"
+msgstr "¿Necesita ayuda?"
+
+#: views/completed.html.php:100
+msgid "next page"
+msgstr "siguiente página"
+
+#: views/choice.html.php:2
+msgid "Next question"
+msgstr "Próxima pregunta"
+
+#: models/question.php:253 models/question.php:259 models/question.php:272
+msgid "No"
+msgstr "No"
+
+#: views/completed.html.php:116
+msgid "No one has submitted this quiz yet."
+msgstr "Nadie ha enviado este cuestionario todavía."
+
+#: controllers/shortcodes.php:7
+msgid "No quiz to load"
+msgstr "No hay prueba para cargar"
+
+#: views/chained-quizzes.html.php:21
+msgid "No users"
+msgstr "Sin usuarios"
+
+#: views/integrations.html.php:13
+msgid ""
+"Note that only quizzes which have the option \"Send email to user with their "
+"result\" selected can be integrated."
+msgstr ""
+"Tenga en cuenta que solo se pueden integrar las pruebas que tengan "
+"seleccionada la opción \"Enviar correo electrónico al usuario con su "
+"resultado\"."
+
+#: views/chained-quizzes.html.php:28
+msgid ""
+"Note: if a quiz title is not hyperlinked this means you have not published "
+"its shortcode yet. You must place the shortcode in a post or page in order "
+"to make the quiz accessible to the public."
+msgstr ""
+"Nota: si el título de un cuestionario no tiene un hipervínculo, significa "
+"que aún no ha publicado su shortcode. Debe colocar el shortcode en una "
+"publicación o página para que el cuestionario sea accesible al público."
+
+#: views/sidebar.html.php:8
+msgid "online demo."
+msgstr "demostración en línea."
+
+#: views/options.html.php:18
+msgid "Only administrator or superadmin can change this!"
+msgstr "¡Solo el administrador o superadministrador puede cambiar esto!"
+
+#: views/results.html.php:16 views/results.html.php:29
+msgid "Optional redirect URL"
+msgstr "URL de redireccionamiento opcional"
+
+#: views/display-quiz.html.php:6
+msgid "or"
+msgstr "o"
+
+#: views/sidebar.html.php:8
+msgid "or check the"
+msgstr "o comprobar el"
+
+#: views/options.html.php:50
+msgid "Other options"
+msgstr "Otras opciones"
+
+#: models/basic.php:217
+msgid "Please answer the question"
+msgstr "Por favor conteste la pregunta"
+
+#: views/sidebar.html.php:17
+msgid "Please ask your question in the"
+msgstr "Por favor haga su pregunta en el"
+
+#: views/question.html.php:69
+msgid "Please enter question title"
+msgstr "Por favor ingrese el título de la pregunta"
+
+#: views/results.html.php:48
+msgid "Please enter title"
+msgstr "Por favor ingrese el título"
+
+#: models/basic.php:218
+msgid "Please provide valid email address"
+msgstr "Proporcione una dirección de correo electrónico válida"
+
+#: views/completed.html.php:10
+msgid "Please rate us 5 Stars!"
+msgstr "¡Califíquenos con 5 estrellas!"
+
+#: controllers/completed.php:194 views/completed.html.php:67 
+#: views/completed.html.php:85 models/quiz.php:281
+msgid "Points"
+msgstr "Puntos"
+
+#: views/completed.html.php:46
+msgid "Points received"
+msgstr "Puntos recibidos"
+
+#: views/choice.html.php:1
+msgid "Points:"
+msgstr "Puntos:"
+
+#: views/completed.html.php:98
+msgid "previous page"
+msgstr "pagina anterior"
+
+#: views/quiz.html.php:41
+msgid "Providing email address is required to do the quiz."
+msgstr ""
+"Es necesario proporcionar una dirección de correo electrónico para hacer el "
+"cuestionario."
+
+#: views/sidebar.html.php:10
+msgid ""
+"Purchasing WatuPRO comes with <strong>60 days refund policy</strong>, one "
+"year <strong>free upgrades</strong> and one year <strong>free "
+"support</strong>."
+msgstr ""
+"La compra de WatuPRO incluye una <strong>política de reembolso de 60 "
+"días</strong>, un año de <strong>actualizaciones gratuitas</strong> y un año "
+"de <strong>soporte gratuito</strong>."
+
+#: views/completed.html.php:84 views/questions.html.php:15 models/quiz.php:279
+msgid "Question"
+msgstr "Pregunta"
+
+#: views/question.html.php:13
+msgid "Question contents"
+msgstr "Contenido de la pregunta"
+
+#: views/question.html.php:12
+msgid "Question title"
+msgstr "Título de la pregunta"
+
+#: views/question.html.php:14
+msgid "Question type:"
+msgstr "Tipo de pregunta:"
+
+#: views/chained-quizzes.html.php:10
+msgid "Questions"
+msgstr "Preguntas"
+
+#: controllers/quizzes.php:110
+msgid "Quiz not found"
+msgstr "Cuestionario no encontrado"
+
+#: views/chained-quizzes.html.php:10
+msgid "Quiz Shortcode"
+msgstr "Código abreviado de prueba"
+
+#: views/quiz.html.php:13
+msgid "Quiz Title"
+msgstr "Título del cuestionario"
+
+#: views/chained-quizzes.html.php:10
+msgid "Quiz title"
+msgstr "título del cuestionario"
+
+#: models/basic.php:178
+msgid "Quizzes"
+msgstr "Cuestionarios"
+
+#: views/question.html.php:15
+msgid "Radio buttons (one possible answer)"
+msgstr "Botones de radio (una respuesta posible)"
+
+#: views/integrations-mailchimp.html.php:22
+msgid "Raw MailChimp response (debug)"
+msgstr "Respuesta de MailChimp sin procesar (depuración)"
+
+#: controllers/completed.php:193 views/completed.html.php:66
+msgid "Record ID"
+msgstr "Identificación de registro"
+
+#: views/display-quiz.html.php:6
+msgid "Register"
+msgstr "Registrarse"
+
+#: views/quiz.html.php:31
+msgid "Require user login to take this quiz."
+msgstr "Requerir inicio de sesión de usuario para tomar este cuestionario."
+
+#: controllers/completed.php:194 views/completed.html.php:67
+msgid "Result"
+msgstr "Resultado"
+
+#: views/completed.html.php:52
+msgid "Result equals:"
+msgstr "El resultado es igual a:"
+
+#: views/results.html.php:13 views/results.html.php:26
+msgid "Result text/description"
+msgstr "Texto/descripción del resultado"
+
+#: views/results.html.php:12 views/results.html.php:25
+msgid "Result title"
+msgstr "Título del resultado"
+
+#: views/chained-quizzes.html.php:11
+msgid "Results"
+msgstr "Resultados"
+
+#: views/options.html.php:8
+msgid "Roles"
+msgstr "Roles"
+
+#: views/options.html.php:10
+msgid "Roles that can manage quizzes"
+msgstr "Roles que pueden administrar cuestionarios"
+
+#: views/sharing-options.html.php:39
+msgid "Save All Settings"
+msgstr "Guardar todas las configuraciones"
+
+#: views/integrations.html.php:26
+msgid "Save Integrations"
+msgstr "Guardar integraciones"
+
+#: views/options.html.php:56
+msgid "Save Options"
+msgstr "Opciones de guardado"
+
+#: views/question.html.php:39
+msgid "Save question and answers"
+msgstr "Guardar preguntas y respuestas"
+
+#: views/quiz.html.php:61
+msgid "Save Quiz"
+msgstr "Guardar prueba"
+
+#: views/results.html.php:31
+msgid "Save Result"
+msgstr "Guardar resultado"
+
+#: views/integrations-arigato.html.php:59 
+#: views/integrations-arigatopro.html.php:73 
+#: views/integrations-mailchimp.html.php:99
+msgid "Save Rule"
+msgstr "Guardar regla"
+
+#: views/integrations-mailchimp.html.php:9
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: views/quiz.html.php:55
+msgid ""
+"Save source URL when submitting the quiz (useful if you have published the "
+"quiz in multiple places on your site)."
+msgstr ""
+"Guarde la URL de origen al enviar el cuestionario (útil si ha publicado el "
+"cuestionario en varios lugares de su sitio)."
+
+#: views/completed.html.php:59
+msgid "Search/Filter"
+msgstr "Buscar/Filltrar"
+
+#: views/options.html.php:44
+msgid "Semicolon"
+msgstr "Punto y coma"
+
+#: views/quiz.html.php:39
+msgid ""
+"Send email to user with their result. If the user is not logged in visitor "
+"an optional \"Enter email\" field will automatically appear above the quiz."
+msgstr ""
+"Enviar correo electrónico al usuario con su resultado. Si el usuario no ha "
+"iniciado sesión como visitante, un campo opcional \"Ingresar correo "
+"electrónico\" aparecerá automáticamente sobre el cuestionario."
+
+#: views/quiz.html.php:37
+msgid ""
+"Send me email when user completes this quiz. Send to this email address:"
+msgstr ""
+"Enviarme un correo electrónico cuando el usuario complete este cuestionario. "
+"Enviar a esta dirección de correo electrónico:"
+
+#: views/options.html.php:23
+msgid "Sender and subjects of the automated emails"
+msgstr "Remitente y asuntos de los correos electrónicos automatizados"
+
+#: views/options.html.php:26
+msgid "Sender email:"
+msgstr "Correo electrónico del remitente:"
+
+#: views/options.html.php:25
+msgid "Sender name:"
+msgstr "Nombre del remitente:"
+
+#: views/quiz.html.php:45
+msgid ""
+"Set email contents (if you skip this, the final screen output will be used "
+"for emails)."
+msgstr ""
+"Establezca el contenido del correo electrónico (si omite esto, el contenido "
+"de la pantalla final se usará para los correos electrónicos)."
+
+#: models/basic.php:180
+msgid "Settings"
+msgstr "Ajustes"
+
+#: views/sharing-options.html.php:32
+msgid "Show count"
+msgstr "Mostrar recuento"
+
+#: views/sharing-options.html.php:15
+msgid "Show LinkedIn button"
+msgstr "Mostrar botón de LinkedIn"
+
+#: views/completed.html.php:103
+msgid "Show me a button to cleanup all submitted data on this quiz."
+msgstr ""
+"Muéstrame un botón para limpiar todos los datos enviados en este "
+"cuestionario."
+
+#: views/sharing-options.html.php:29
+msgid "Show Tweet button"
+msgstr "Mostrar botón de Tweet"
+
+#: models/basic.php:182
+msgid "Social Sharing"
+msgstr "Compartiendo en redes sociales"
+
+#: views/display-quiz.html.php:19
+#, php-format
+msgid "Sorry, you can take this quiz only %d times."
+msgstr "Lo sentimos, solo puede realizar este cuestionario %d veces."
+
+#: views/completed.html.php:76
+#, php-format
+msgid "Source: %s"
+msgstr "Fuente: %s"
+
+#: views/completed.html.php:25 views/completed.html.php:31 
+#: views/completed.html.php:37
+msgid "Starts with"
+msgstr "Comienza con"
+
+#: views/options.html.php:27
+msgid "Subject of email sent to admin:"
+msgstr "Asunto del correo electrónico enviado al administrador:"
+
+#: views/options.html.php:28
+msgid "Subject of email sent to quiz taker:"
+msgstr "Asunto del correo electrónico enviado al que tomó la prueba:"
+
+#: views/chained-quizzes.html.php:11
+msgid "Submitted by"
+msgstr "Presentado por"
+
+#: views/integrations-mailchimp.html.php:48
+msgid "subscribe them to audience"
+msgstr "Suscríbelos a la audiencia"
+
+#: views/integrations-arigatopro.html.php:28
+msgid "subscribe them to mailing list"
+msgstr "Suscríbelos a la lista de correo"
+
+#: views/sidebar.html.php:17
+msgid "support forum at Wordpress."
+msgstr "foro de soporte en Wordpress."
+
+#: views/options.html.php:45
+msgid "TAB"
+msgstr "PESTAÑA"
+
+#: views/sidebar.html.php:8
+msgid "take the tour"
+msgstr "Toma el recorrido"
+
+#: views/question.html.php:17
+msgid "Text box (open-end, essay question)"
+msgstr "Cuadro de texto (abierto, pregunta de ensayo)"
+
+#: views/options.html.php:37
+msgid "Text/Value of the \"Go ahead\" button:"
+msgstr "Texto/Valor del botón \"Continuar\":"
+
+#: views/sharing-options.html.php:18
+msgid "Text:"
+msgstr "Texto:"
+
+#: views/integrations.html.php:18
+msgid "The plugin Arigato is not installed."
+msgstr "El complemento Arigato no está instalado."
+
+#: views/integrations.html.php:22
+msgid "The plugin Arigato PRO is not installed."
+msgstr "El complemento Arigato PRO no está instalado."
+
+#: controllers/results.php:19
+msgid "The result was not added"
+msgstr "El resultado no fue agregado."
+
+#: controllers/results.php:38
+msgid "The result was not deleted"
+msgstr "El resultado no fue eliminado."
+
+#: controllers/results.php:29
+msgid "The result was not saved"
+msgstr "El resultado no se guardó."
+
+#: views/sharing-options.html.php:7
+#, php-format
+msgid ""
+"The social media buttons are provided by <a href=\"%s\" target=\"_blank\">"
+"Arbenting</a>. Feel free to replace them with other icons."
+msgstr ""
+"Los botones de redes sociales son proporcionados por <a href=\"%s\" "
+"target=\"_blank\">Arbenting</a> . Siéntase libre de reemplazarlos con otros "
+"íconos."
+
+#: views/quiz.html.php:28
+msgid ""
+"The user email address if the user is logged in or email address has been "
+"requested with the option \"Send email to user\". Otherwise it will be empty."
+msgstr ""
+"La dirección de correo electrónico del usuario si el usuario ha iniciado "
+"sesión o se ha solicitado la dirección de correo electrónico con la opción "
+"\"Enviar correo electrónico al usuario\". De lo contrario, estará vacío."
+
+#: views/quiz.html.php:27
+msgid ""
+"The user name of the logged in user - use it only if you require / expect "
+"logged in users. If the user is not logged in, the variable will display "
+"\"Guest\"."
+msgstr ""
+"El nombre de usuario del usuario que ha iniciado sesión: utilícelo solo si "
+"necesita/espera usuarios que hayan iniciado sesión. Si el usuario no ha "
+"iniciado sesión, la variable mostrará \"Invitado\"."
+
+#: views/chained-quizzes.html.php:31
+msgid "There are no quizzes yet."
+msgstr "No hay cuestionarios todavía."
+
+#: views/completed.html.php:106
+msgid "These operations cannot be undone!"
+msgstr "¡Estas operaciones no se pueden deshacer!"
+
+#: views/quiz.html.php:17
+msgid ""
+"This is the content that is shown to the user after they complete the quiz. "
+"The following variables can be used:"
+msgstr ""
+"Este es el contenido que se muestra al usuario después de completar el "
+"cuestionario. Se pueden utilizar las siguientes variables:"
+
+#: controllers/quizzes.php:131
+msgid "This quiz has no questions."
+msgstr "Este cuestionario no tiene preguntas."
+
+#: views/chained-quizzes.html.php:24
+msgid "This will make a duplicate of the whole quiz."
+msgstr "Esto hará un duplicado de todo el cuestionario."
+
+#: views/sidebar.html.php:19
+msgid "through our site."
+msgstr "a través de nuestro sitio."
+
+#: views/quiz.html.php:75
+msgid "Title is required"
+msgstr "Se requiere título"
+
+#: views/sharing-options.html.php:17
+msgid "Title:"
+msgstr "Título:"
+
+#: views/sharing-options.html.php:35
+msgid "Tweet text (No more than 140 chars):"
+msgstr "Texto del tweet (no más de 140 caracteres):"
+
+#: views/sharing-options.html.php:25
+msgid "Twitter Sharing Options:"
+msgstr "Opciones para compartir en Twitter:"
+
+#: views/questions.html.php:15
+msgid "Type"
+msgstr "Tipo"
+
+#: views/sidebar.html.php:19
+msgid ""
+"Use the forum only for issues concerning the free Chained Quiz plugin. If "
+"you have a pre-sales question about Watu PRO please contact us"
+msgstr ""
+"Use el foro solo para problemas relacionados con el complemento gratuito "
+"Chained Quiz. Si tiene una pregunta de preventa sobre Watu PRO, contáctenos"
+
+#: views/integrations-arigato.html.php:12 
+#: views/integrations-arigatopro.html.php:12 
+#: views/integrations-mailchimp.html.php:32
+msgid "User completes"
+msgstr "El usuario completa"
+
+#: models/quiz.php:224
+#, php-format
+msgid "User email: %s"
+msgstr "Correo electrónico del usuario: %s"
+
+#: views/options.html.php:31
+msgid "User interface options"
+msgstr "Opciones de interfaz de usuario"
+
+#: models/quiz.php:223
+#, php-format
+msgid "User IP: %s"
+msgstr "IP de usuario: %s"
+
+#: controllers/completed.php:193
+msgid "User name or IP"
+msgstr "Nombre de usuario o IP"
+
+#: views/completed.html.php:66
+msgid "User name, email or IP"
+msgstr "Nombre de usuario, email o IP"
+
+#: models/basic.php:164
+msgid "User results on {{quiz-name}}"
+msgstr "Resultados del usuario en {{quiz-name}}"
+
+#: views/completed.html.php:23
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: models/quiz.php:220
+#, php-format
+msgid "Username: %s <br> User email: %s"
+msgstr "Nombre de usuario: %s <br> Correo electrónico del usuario: %s"
+
+#: models/basic.php:191
+msgid "Users Completed Quiz"
+msgstr "Cuestionario completado por los usuarios"
+
+#: views/completed.html.php:2
+#, php-format
+msgid "Users who submitted quiz \"%s\""
+msgstr "Usuarios que enviaron el cuestionario \"%s\""
+
+#: views/sharing-options.html.php:33
+msgid "Via @"
+msgstr "Vía @"
+
+#: views/completed.html.php:78
+msgid "View details"
+msgstr "Ver detalles"
+
+#: views/integrations-mailchimp.html.php:18
+msgid "We couldn't retrieve any mailing lists from your MailChimp account."
+msgstr ""
+"No pudimos recuperar ninguna lista de correo de su cuenta de MailChimp."
+
+#: views/integrations-mailchimp.html.php:20
+msgid "We got this error from MailChimp:"
+msgstr "Recibimos este error de MailChimp:"
+
+#: views/choice.html.php:1
+msgid "When selected go to:"
+msgstr "Cuando se selecciona ir a:"
+
+#: views/integrations-arigato.html.php:41 
+#: views/integrations-arigatopro.html.php:48 
+#: views/integrations-mailchimp.html.php:71
+msgid "When user completes"
+msgstr "Cuando el usuario completa"
+
+#: views/integrations-arigato.html.php:18 
+#: views/integrations-arigato.html.php:48 
+#: views/integrations-arigatopro.html.php:18 
+#: views/integrations-arigatopro.html.php:55 
+#: views/integrations-mailchimp.html.php:38 
+#: views/integrations-mailchimp.html.php:78
+msgid "with the following result:"
+msgstr "con el siguiente resultado:"
+
+#: models/basic.php:162
+msgid "WordPress"
+msgstr "WordPress"
+
+#: models/question.php:253 models/question.php:259 models/question.php:272
+msgid "Yes"
+msgstr "sí"
+
+#: views/quiz.html.php:38
+msgid "You can enter multiple emails separated by comma"
+msgstr "Puede ingresar múltiples correos electrónicos separados por comas"
+
+#: views/quiz.html.php:50
+msgid "You can use the same variables as in the Final Output box"
+msgstr "Puede utilizar las mismas variables que en el cuadro Resultado final"
+
+#: views/sharing-options.html.php:6
+#, php-format
+msgid ""
+"You can use the shortcode %s to display Facebook share button on the \"Final "
+"screen\" on your quiz."
+msgstr ""
+"Puede usar el shortcode %s para mostrar el botón Compartir de Facebook en la "
+"\"Pantalla final\" de su prueba."
+
+#: views/sharing-options.html.php:36
+msgid ""
+"You can use the variables {{{quiz-name}}}, {{{result-title}}} and {{{result-"
+"description}}}."
+msgstr ""
+"Puede utilizar las variables {{{quiz-name}}}, {{{result-title}}} y {{{result-"
+"description}}}."
+
+#: views/sharing-options.html.php:19
+msgid ""
+"You can use the variables {{{quiz-name}}}, {{{url}}}, {{{result-title}}} and "
+"{{{result-description}}}."
+msgstr ""
+"Puede utilizar las variables {{{quiz-name}}}, {{{url}}}, {{{result-title}}} "
+"y {{{result-description}}}."
+
+#: views/display-quiz.html.php:3
+msgid "You need to be registered and logged in to take this quiz."
+msgstr ""
+"Debes estar registrado e iniciar sesión para realizar este cuestionario."
+
+#: views/integrations-mailchimp.html.php:14
+msgid ""
+"You will not be able to add any rules until you enter your MailChimp API Key."
+msgstr ""
+"No podrá agregar ninguna regla hasta que ingrese su clave API de MailChimp."
+
+#: views/question.html.php:23
+msgid "Your comments:"
+msgstr "Tus comentarios:"
+
+#: views/display-quiz.html.php:30
+msgid "Your email address:"
+msgstr "Su dirección de correo electrónico:"
+
+#: views/sharing-options.html.php:12
+msgid "Your Facebook App ID:"
+msgstr "Su identificación de la aplicación de Facebook:"
+
+#: views/integrations-mailchimp.html.php:7
+msgid "Your MailChimp API Key:"
+msgstr "Su clave API de MailChimp:"
+
+#: models/basic.php:165
+msgid "Your results on {{quiz-name}}"
+msgstr "Tus resultados en {{quiz-name}}"
