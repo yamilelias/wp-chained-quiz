@@ -120,6 +120,7 @@ The final screen is loaded by Ajax so some contact and other forms which use com
 #### Version 1.3.1
 - Started a new fork in this repository
 - Added translations for Spanish (MX and ES)
+- Add a plugin icon
 
 #### Version 1.3
 - Added variable {{user-name}} to show logged in user's name in the quiz final screen or the automated email.

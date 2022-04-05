@@ -174,7 +174,7 @@ class ChainedQuiz {
    	$chained_caps = current_user_can('manage_options') ? 'manage_options' : 'chained_manage';
    	
    	add_menu_page(__('Chained Quiz', 'chained'), __('Chained Quiz', 'chained'), $chained_caps, "chained_quizzes", 
-   		array('ChainedQuizQuizzes', "manage"));
+   		array('ChainedQuizQuizzes', "manage"), 'dashicons-forms', 15);
    	add_submenu_page('chained_quizzes', __('Quizzes', 'chained'), __('Quizzes', 'chained'), $chained_caps, 
    		'chained_quizzes', array('ChainedQuizQuizzes', "manage"));					
    	add_submenu_page('chained_quizzes', __('Settings', 'chained'), __('Settings', 'chained'), 'manage_options', 

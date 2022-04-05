@@ -877,7 +877,7 @@ msgstr "Título del cuestionario"
 
 #: views/chained-quizzes.html.php:10
 msgid "Quiz title"
-msgstr "título del cuestionario"
+msgstr "Título del cuestionario"
 
 #: models/basic.php:178
 msgid "Quizzes"

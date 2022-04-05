@@ -4,7 +4,7 @@ Tags: quiz, exam, test, questionnaire, survey
 Requires at least: 4.0
 Requires PHP: 7.0
 Tested up to: 5.9
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPL2
 
 Create a quiz where the next question depends on the answer to the previous question. Final quiz results (grades) can depend on the amount of collected points during answering the chain.  
@@ -121,6 +121,11 @@ The final screen is loaded by Ajax so some contact and other forms which use com
 3. And of course you can define different results depending on the total points collected in the quiz 
 
 == Changelog ==
+
+= Version 1.3.1 =
+- Started a new fork in this repository
+- Added translations for Spanish (MX and ES)
+- Add a plugin icon
 
 = Version 1.3 =
 - Added variable {{user-name}} to show logged in user's name in the quiz final screen or the automated email.
