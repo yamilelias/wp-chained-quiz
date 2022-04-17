@@ -64,9 +64,9 @@ class ChainedQuizQuestions {
 		
 		// select other questions for the go-to dropdown
 		$other_questions = $wpdb->get_results($wpdb->prepare("SELECT * FROM ".CHAINED_QUESTIONS." 
-			WHERE quiz_id=%d ORDER BY title", $quiz->id));	
-		
-		include(CHAINED_PATH.'/views/question.html.php');
+			WHERE quiz_id=%d ORDER BY title", $quiz->id));
+
+        include(CHAINED_PATH.'/views/question.html.php');
 	} // end edit_quiz
 	
 	// list and delete questions

@@ -95,3 +95,8 @@ chainedQuiz.initializeQuestion = function(quizID) {
 		}
 	});
 }
+
+// Hide images if the src is empty
+function hide(event){
+	event.target.style.display = 'none'
+}

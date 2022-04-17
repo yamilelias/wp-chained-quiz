@@ -30,3 +30,28 @@
 textarea.chained-quiz-frontend {
 	width: 100%;
 }
+
+/* Chained Quiz Configuration */
+
+.chained-quiz-answer-textarea {
+	margin-left: 1rem;
+}
+
+.chained-quiz-choice-columns {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.chained-quiz-choice-options {
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+}
+
+.image-preview-wrapper {
+	display: flex;
+}
+
+#upload_image_button {
+	margin-top: 1rem;
+}
