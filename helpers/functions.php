@@ -41,33 +41,22 @@ function chained_quiz_media_selector_print_scripts()
         jQuery(document).ready(function ($) {
 
             // Uploading files
-            var file_frame;
-            var wp_media_post_id = wp.media.model.settings.post.id; // Store the old id
-            var set_to_post_id = <?php echo $my_saved_attachment_post_id; ?>; // Set this
+            let file_frame;
+            const wp_media_post_id = wp.media.model.settings.post.id; // Store the old id
+            const set_to_post_id = <?php echo $my_saved_attachment_post_id; ?>; // Set this
 
-            var buttons = document.querySelectorAll(".button-add-media"); // this element contains more than 1 DOMs.
+            const buttons = document.querySelectorAll(".button-add-media"); // this element contains more than 1 DOMs.
 
             // Assign the onclick to every answer button
             buttons.forEach(function (button) {
-                console.log(button);
                 button.onclick = function (event) {
                     const nameSplit = event.target.name.split('-');
-                    console.log(nameSplit, `image_preview-${nameSplit[1]}`, `image_attachment_${nameSplit[1]}`)
+
                     event.stopPropagation();
                     event.stopImmediatePropagation();
                     event.preventDefault();
 
-                    // If the media frame already exists, reopen it.
-                    if (file_frame) {
-                        // Set the post ID to what we want
-                        file_frame.uploader.uploader.param('post_id', set_to_post_id);
-                        // Open frame
-                        file_frame.open();
-                        return;
-                    } else {
-                        // Set the wp.media post id so the uploader grabs the ID we want when initialised
-                        wp.media.model.settings.post.id = set_to_post_id;
-                    }
+                    wp.media.model.settings.post.id = set_to_post_id;
 
                     // Create the media frame.
                     file_frame = wp.media.frames.file_frame = wp.media({
@@ -83,7 +72,6 @@ function chained_quiz_media_selector_print_scripts()
                     file_frame.on('select', function () {
                         // We set multiple to false so only get one image from the uploader
                         const attachment = file_frame.state().get('selection').first().toJSON();
-                        console.log(file_frame);
 
                         // Do something with attachment.id and/or attachment.url here
                         $(`#image_preview-${nameSplit[1]}`).attr('src', attachment.url).css('width', 'auto').css('display', 'inherit');
@@ -97,11 +85,11 @@ function chained_quiz_media_selector_print_scripts()
                     file_frame.open();
                 };
             });
-            // jQuery('.button-add-media').on('click', );
 
             // Restore the main ID when the add media button is pressed
             jQuery('a.add_media').on('click', function () {
                 wp.media.model.settings.post.id = wp_media_post_id;
+                file_frame.close()
             });
         });
 
