@@ -50,7 +50,7 @@ function chained_quiz_media_selector_print_scripts()
             // Assign the onclick to every answer button
             buttons.forEach(function (button) {
                 button.onclick = function (event) {
-                    const nameSplit = event.target.name.split('-');
+                    const imageId = event.target.name.split('-');
 
                     event.stopPropagation();
                     event.stopImmediatePropagation();
@@ -64,7 +64,7 @@ function chained_quiz_media_selector_print_scripts()
                         button: {
                             text: 'Use this image',
                         },
-                        cid: nameSplit[1],
+                        cid: imageId[1],
                         multiple: false	// Set to true to allow multiple files to be selected
                     });
 
@@ -74,8 +74,8 @@ function chained_quiz_media_selector_print_scripts()
                         const attachment = file_frame.state().get('selection').first().toJSON();
 
                         // Do something with attachment.id and/or attachment.url here
-                        $(`#image_preview-${nameSplit[1]}`).attr('src', attachment.url).css('width', 'auto').css('display', 'inherit');
-                        $(`#image_attachment_${nameSplit[1]}`).val(attachment.id);
+                        $(`#image_preview-${imageId[1]}`).attr('src', attachment.url).css('width', 'auto').css('display', 'inherit');
+                        $(`#image_attachment_id-${imageId[1]}`).attr('value', attachment.url)
 
                         // Restore the main post ID
                         wp.media.model.settings.post.id = wp_media_post_id;

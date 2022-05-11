@@ -10,8 +10,9 @@
         <div class="image-selector-question">
             <div class='image-preview-wrapper'>
                 <img alt="<?php echo empty($choice->id) ? 'image_preview[]' : 'image_preview-' . $choice->id ?>"
-                     id="<?php echo empty($choice->id) ? 'image_preview[]' : 'image_preview-' . $choice->id ?>" class='image-preview' src='' width='100' height='100'
-                     style='max-height: 100px; width: 100px; display: none;'>
+                     id="<?php echo empty($choice->id) ? 'image_preview[]' : 'image_preview-' . $choice->id ?>" class='image-preview'
+                     src='<?php echo $choice->image ?>' width='100' height='100'
+                     style='max-height: 100px; width: 100px; display: <?php echo empty($choice->image) ? 'none' : 'inherit' ?>;'>
             </div>
             <input name="<?php echo empty($choice->id) ? 'upload_image[]-' : 'upload_image-' . $choice->id ?>"
                    id="<?php echo 'upload_image_button-' . $choice->id ?>" type="button" class="button button-add-media"

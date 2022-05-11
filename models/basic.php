@@ -37,6 +37,7 @@ class ChainedQuiz {
 	  } 
 	  
 	  // choices
+       // TODO: Add it to the first creation of the tables
      if($wpdb->get_var("SHOW TABLES LIKE '".CHAINED_CHOICES."'") != CHAINED_CHOICES) {        
 			$sql = "CREATE TABLE `" . CHAINED_CHOICES . "` (
 				  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -44,6 +45,7 @@ class ChainedQuiz {
 				  `question_id` INT UNSIGNED NOT NULL DEFAULT 0,
 				  `choice` TEXT,
 				  `points` DECIMAL(8,2) NOT NULL DEFAULT '0.00',
+				  `image` TEXT,
 				  `is_correct` TINYINT UNSIGNED NOT NULL DEFAULT 0,
 				  `goto` VARCHAR(100) NOT NULL DEFAULT 'next'
 				) $collation";

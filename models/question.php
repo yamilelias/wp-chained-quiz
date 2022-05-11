@@ -76,6 +76,7 @@ class ChainedQuizQuestion
         // edit/delete existing choices
         $choices = $wpdb->get_results($wpdb->prepare("SELECT * FROM " . CHAINED_CHOICES . " WHERE question_id=%d ORDER BY id ", $id));
 
+        // TODO: Add here the choice to save the image to the question
         foreach ($choices as $choice) {
             if (!empty($_POST['dels']) and in_array($choice->id, $_POST['dels'])) {
                 $wpdb->query($wpdb->prepare("DELETE FROM " . CHAINED_CHOICES . " WHERE id=%d", $choice->id));
@@ -85,13 +86,15 @@ class ChainedQuizQuestion
             if (!current_user_can('unfiltered_html')) {
                 $_POST['answer' . $choice->id] = strip_tags($_POST['answer' . $choice->id]);
             }
+
             $_POST['goto' . $choice->id] = sanitize_text_field($_POST['goto' . $choice->id]);
             if (!is_numeric($_POST['points' . $choice->id])) $_POST['points' . $choice->id] = 0;
 
             // else update
+            // TODO: Add it to the query to save it
             $wpdb->query($wpdb->prepare("UPDATE " . CHAINED_CHOICES . " SET
-				choice=%s, points=%s, is_correct=%d, goto=%s WHERE id=%d",
-                $_POST['answer' . $choice->id], $_POST['points' . $choice->id],
+				choice=%s, points=%s, image=%s, is_correct=%d, goto=%s WHERE id=%d",
+                $_POST['answer' . $choice->id], $_POST['points' . $choice->id], $_POST['image_attachment-' . $choice->id],
                 intval(@$_POST['is_correct' . $choice->id]), $_POST['goto' . $choice->id], $choice->id));
         }
 
@@ -106,6 +109,7 @@ class ChainedQuizQuestion
             if (!current_user_can('unfiltered_html')) {
                 $answer = strip_tags($answer);
             }
+
             if (!is_numeric($_POST['points'][($counter - 2)])) $_POST['points'][($counter - 2)] = 0;
 
             // now insert the choice
