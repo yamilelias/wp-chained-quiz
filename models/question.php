@@ -34,7 +34,7 @@ class ChainedQuizQuestion
         global $wpdb;
 
         $vars['title'] = sanitize_text_field($vars['title']);
-        if (!in_array($vars['qtype'], array('radio', 'checkbox', 'text'))) $vars['qtype'] = 'radio';
+        if (!in_array($vars['qtype'], array('radio', 'checkbox', 'text', 'button'))) $vars['qtype'] = 'radio';
         $vars['question'] = wp_kses_post($vars['question']);
 
         $accept_comments = empty($vars['accept_comments']) ? 0 : 1;
@@ -76,7 +76,6 @@ class ChainedQuizQuestion
         // edit/delete existing choices
         $choices = $wpdb->get_results($wpdb->prepare("SELECT * FROM " . CHAINED_CHOICES . " WHERE question_id=%d ORDER BY id ", $id));
 
-        // TODO: Add here the choice to save the image to the question
         foreach ($choices as $choice) {
             if (!empty($_POST['dels']) and in_array($choice->id, $_POST['dels'])) {
                 $wpdb->query($wpdb->prepare("DELETE FROM " . CHAINED_CHOICES . " WHERE id=%d", $choice->id));
@@ -91,7 +90,6 @@ class ChainedQuizQuestion
             if (!is_numeric($_POST['points' . $choice->id])) $_POST['points' . $choice->id] = 0;
 
             // else update
-            // TODO: Add it to the query to save it
             $wpdb->query($wpdb->prepare("UPDATE " . CHAINED_CHOICES . " SET
 				choice=%s, points=%s, image=%s, is_correct=%d, goto=%s WHERE id=%d",
                 $_POST['answer' . $choice->id], $_POST['points' . $choice->id], $_POST['image_attachment-' . $choice->id],
@@ -135,7 +133,7 @@ class ChainedQuizQuestion
     function display_choices($question, $choices)
     {
         $autocontinue = $output = '';
-        if ($question->qtype == 'radio' and $question->autocontinue) {
+        if (($question->qtype == 'radio' or $question->qtype == 'button') and $question->autocontinue) {
             $autocontinue = "onclick=\"chainedQuiz.goon(" . $question->quiz_id . ", '" . admin_url('admin-ajax.php') . "');\"";
             $output .= '<!--hide_go_ahead-->';
         }
@@ -158,6 +156,19 @@ class ChainedQuizQuestion
                                         $choice_image
                                         <input class='chained-quiz-frontend chained-quiz-$type' type='$type' name='$name' value='" . $choice->id . "' $autocontinue> $choice_text
                                     </label>
+                                </div>";
+                }
+
+                return $output;
+            case 'button':
+                foreach ($choices as $choice) {
+                    $choice_text = stripslashes($choice->choice);
+                    $choice_text = do_shortcode($choice_text);
+                    $choice_image = !empty($choice->image) ? "<img src='$choice->image' alt='image id #$choice->id' class='chained-quiz-choice-image' style='max-height: 300px' />" : "";
+
+                    $output .= "<div class='chained-quiz-choice'>
+                                    $choice_image
+                                    <button class='chained-quiz-frontend chained-quiz-button' value='" . $choice->id . "' $autocontinue> $choice_text </button>
                                 </div>";
                 }
 

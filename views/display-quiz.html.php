@@ -45,7 +45,7 @@ if(!empty($quiz->require_login) and !empty($quiz->times_to_take)) {
 		</div>
 		<?php endif;?>
 		
-		<div class="chained-quiz-action" style='display:<?php echo ($question->autocontinue and $question->qtype == 'radio') ? 'none' : 'block';?>'>
+		<div class="chained-quiz-action" style='display:<?php echo ($question->autocontinue and $question->qtype === 'radio' or $question->qtype === 'button') ? 'none' : 'block';?>'>
 			<input type="button" id="chained-quiz-action-<?php echo $quiz->id?>" value="<?php echo empty($ui['go_ahead_value']) ?__('Go ahead', 'chained') : $ui['go_ahead_value'] ?>" onclick="chainedQuiz.goon(<?php echo $quiz->id?>, '<?php echo admin_url('admin-ajax.php')?>');" disabled="true">
 			<img src="<?php echo CHAINED_URL.'img/loading.gif'?>" width="32" height="32" alt="Loading..." style="display: none;" id="chainedLoading">
 		</div>

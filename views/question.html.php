@@ -11,13 +11,16 @@
 		<form method="post" onsubmit="return chainedQuizValidate(this);">
 			<p><label><?php _e('Question title', 'chained')?></label> <input type="text" name="title" size="40" value="<?php echo @$question->title?>"> <i><?php _e('for management purposes', 'chained');?></i></p>
 			<p><label><?php _e('Question contents', 'chained')?></label> <?php echo wp_editor(stripslashes(@$question->question), 'question')?></p>
-			<p><label><?php _e('Question type:', 'chained')?></label> <select name="qtype" onchange="this.value == 'radio' ? jQuery('#chainedAutoContinue').show() : jQuery('#chainedAutoContinue').hide();">
+			<p><label><?php _e('Question type:', 'chained')?></label> <select name="qtype" onchange="this.value === 'text' ? jQuery('#chainedAutoContinue').hide() : jQuery('#chainedAutoContinue').show();">
 				<option value="radio" <?php if(!empty($question->id) and $question->qtype == 'radio') echo 'selected'?>><?php _e('Radio buttons (one possible answer)','chained')?></option>
 				<option value="checkbox" <?php if(!empty($question->id) and $question->qtype == 'checkbox') echo 'selected'?>><?php _e('Checkboxes (multiple possible answers)','chained')?></option>
 				<option value="text" <?php if(!empty($question->id) and $question->qtype == 'text') echo 'selected'?>><?php _e('Text box (open-end, essay question)','chained')?></option>
+				<option value="button" <?php if(!empty($question->id) and $question->qtype == 'button') echo 'selected'?>><?php _e('Buttons (one possible answer)','chained')?></option>
 			</select>
 			
-			<span id="chainedAutoContinue" style='display:<?php echo (empty($question->id) or $question->qtype == 'radio') ? 'inline' : 'none';?>'><input type="checkbox" name="autocontinue" value="1" <?php if(!empty($question->autocontinue)) echo 'checked'?>> <?php _e('Automatically continue to the next question when a choice is selected', 'chained')?></span> </p>
+			<span id="chainedAutoContinue" style='display:<?php echo (empty($question->id) or $question->qtype == 'text') ? 'none' : 'inline';?>'>
+                <input type="checkbox" name="autocontinue" value="1" <?php if(!empty($question->autocontinue)) echo 'checked'?>> <?php _e('Automatically continue to the next question when a choice is selected', 'chained')?></span>
+            </p>
 			
 			<p><input type="checkbox" name="accept_comments" value="1" <?php if(!empty($question->accept_comments)) echo 'checked'?>> <?php _e('Accept comments along with the answer.', 'chained');?> &nbsp;
 			<?php _e('Label before the comments field:', 'chained');?> <input type="text" name="accept_comments_label" size="30" value="<?php echo empty($question->accept_comments_label) ? __('Your comments:', 'chained') : stripslashes(@$question->accept_comments_label);?>"></p>
