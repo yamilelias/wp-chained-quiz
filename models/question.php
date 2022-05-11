@@ -143,7 +143,6 @@ class ChainedQuizQuestion
         switch ($question->qtype) {
             case 'text':
                 return "<div class='chained-quiz-choice'><textarea class='chained-quiz-frontend' required='required' name='answer' rows='5' cols='80'></textarea></div>";
-                break;
             case 'radio':
             case 'checkbox':
                 $type = $question->qtype;
@@ -152,12 +151,17 @@ class ChainedQuizQuestion
                 foreach ($choices as $choice) {
                     $choice_text = stripslashes($choice->choice);
                     $choice_text = do_shortcode($choice_text);
+                    $choice_image = !empty($choice->image) ? "<img src='$choice->image' alt='image id #$choice->id' class='chained-quiz-choice-image' style='max-height: 300px' />" : "";
 
-                    $output .= "<div class='chained-quiz-choice'><label class='chained-quiz-label'><input class='chained-quiz-frontend chained-quiz-$type' type='$type' name='$name' value='" . $choice->id . "' $autocontinue> $choice_text</label></div>";
+                    $output .= "<div class='chained-quiz-choice'>
+                                    <label class='chained-quiz-label'>
+                                        $choice_image
+                                        <input class='chained-quiz-frontend chained-quiz-$type' type='$type' name='$name' value='" . $choice->id . "' $autocontinue> $choice_text
+                                    </label>
+                                </div>";
                 }
 
                 return $output;
-                break;
         }
     } // end display_choices
 

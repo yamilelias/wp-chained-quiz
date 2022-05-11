@@ -11,15 +11,15 @@
             <div class='image-preview-wrapper'>
                 <img alt="<?php echo empty($choice->id) ? 'image_preview[]' : 'image_preview-' . $choice->id ?>"
                      id="<?php echo empty($choice->id) ? 'image_preview[]' : 'image_preview-' . $choice->id ?>" class='image-preview'
-                     src='<?php echo $choice->image ?>' width='100' height='100'
-                     style='max-height: 100px; width: 100px; display: <?php echo empty($choice->image) ? 'none' : 'inherit' ?>;'>
+                     src='<?php echo $choice->image ?>'
+                     style='max-width: 100px; display: <?php echo empty($choice->image) ? 'none' : 'inherit' ?>;'>
             </div>
             <input name="<?php echo empty($choice->id) ? 'upload_image[]-' : 'upload_image-' . $choice->id ?>"
                    id="<?php echo 'upload_image_button-' . $choice->id ?>" type="button" class="button button-add-media"
                    value="<?php _e('Upload image'); ?>"/>
             <input type='hidden'
                    name='<?php echo empty($choice->id) ? 'image_attachment[]-' : 'image_attachment-' . $choice->id ?>'
-                   id='<?php echo empty($choice->id) ? 'image_attachment[]-' : 'image_attachment_id-' . $choice->id ?>' value=''>
+                   id='<?php echo empty($choice->id) ? 'image_attachment[]-' : 'image_attachment_id-' . $choice->id ?>' value='<?php echo !empty($choice->image) ?  $choice->image : '' ?>'>
         </div>
         <div>
         <textarea rows="3" cols="40" class="chained-quiz-answer-textarea"

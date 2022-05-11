@@ -37,6 +37,10 @@ textarea.chained-quiz-frontend {
 	margin-left: 1rem;
 }
 
+.image-preview-wrapper {
+	margin-bottom: 1em
+}
+
 .chained-quiz-choice-columns {
 	display: flex;
 	margin-top: 1rem;
